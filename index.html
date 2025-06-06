@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio Professor Carlos</title>
+    <style>
+        /* Ajuste para as imagens dentro dos modais 2 e 3 */
+        #modal2 .modal-body img,
+        #modal3 .modal-body img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png" alt="avatar do professor Carlos" class="rounded-circle" width="150" height="150" />
+        <p class="lead">Eu sou o professor Carlos Chessa</p>
+        <h1>Professor de Língua Inglesa, Robótica e Programação</h1>
+        <p>
+            Atuo na rede pública do Estado de São Paulo, em escola do programa PEI, lecionando Língua Inglesa para turmas do 6º ano do Ensino Fundamental ao 3º ano do Ensino Médio.
+            Ministro também aulas de robótica para o Ensino Médio e programação para o 3º ano do Ensino Médio, com foco em Arduino e micro:bit.
+        </p>
+        <p>
+            Sou Tecnólogo em Análise e Desenvolvimento de Sistemas (UNICID), com formação pedagógica para não licenciados em Letras – Inglês.
+            Tenho experiência profissional em projetos de TI para saúde e busco constantemente aprimorar minhas aulas explorando conexões interdisciplinares.
+        </p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">Inglês Avançado</p>
+            <p class="badge bg-secondary">HTML e CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Arduino</p>
+            <p class="badge bg-secondary">Micro:bit</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto AthleTogether" />
+                    <div class="card-body">
+                        <h5 class="card-title">AthleTogether – Esporte e Inglês</h5>
+                        <p class="card-text">
+                            Na Eletiva AthleTogether, você vai conhecer esportes de cinco continentes onde o inglês é falado:
+                        </p>
+                        <ul>
+                            <li>Américas: basquete (EUA) e hóquei (Canadá)</li>
+                            <li>Europa: futebol (Inglaterra) e boxe (Irlanda do Norte)</li>
+                            <li>África: atletismo (África do Sul e Quênia)</li>
+                        </ul>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Veja o projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto de robótica com Arduino" />
+                    <div class="card-body">
+                        <h5 class="card-title">Robótica Pedagógica com Arduino</h5>
+                        <p class="card-text">
+                            Aula de prototipagem durante o Projeto de automação e programação com Arduino, focado em sustentabilidade e reciclagem para o Ensino Médio, ministrado pela UFABC.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Veja o projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto interdisciplinar com atletismo e tecnologia" />
+                    <div class="card-body">
+                        <h5 class="card-title">Prototipagem na aula de Robótica</h5>
+                        <p class="card-text">
+                            A aula marca a transição da teoria para a prática com foco em cultura maker e prototipagem mecânica. Os alunos relembram conceitos históricos e técnicos sobre a evolução dos teares.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Veja o projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">AthleTogether – Esporte e Inglês</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                            Com o prof. de Educação Física ensinando regras e prática, e o prof. de Inglês ensinando vocabulário, ações e equipamentos. Explore ainda carreiras do mundo esportivo que exigem inglês, como árbitros, treinadores e fisioterapeutas.
+                        </p>
+                    <p>
+                        Na Eletiva AthleTogether, exploramos esportes de cinco continentes onde o inglês é língua principal. Alunos aprendem regras e vocabulário com os professores de Educação Física e Inglês.
+                    </p>
+                    <img src="img/projeto-1.png" alt="Imagem representativa do projeto de plataforma educacional de inglês" class="img-fluid" />
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Robótica Pedagógica com Arduino</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Projeto de automação usando Arduino, focado em sustentabilidade e reciclagem para alunos do Ensino Médio.
+                    </p>
+                    <p>Envolve programação básica e montagem de circuitos simples.</p>
+                    <p>Em um dia específico do curso de robótica na UFABC, criei um protótipo de avião usando LEDs para simular luzes de navegação e motores para movimentação. Essa experiência prática ajudou a integrar conceitos de eletrônica e programação.</p>
+                    <img src="img/projeto-2.png" alt="Prototipo de avião com LEDs e motores - UFABC" />
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Prototipagem na aula de Robótica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        A aula explora o mecanismo de treadle linkage (ligação de pedal), comum em sistemas mecânicos antigos e atuais, e relaciona esse conhecimento ao movimento rotatório gerado a partir do movimento linear.
+                    </p>
+                    <p>A aula fortalece o vínculo entre conhecimento técnico e expressão criativa, promovendo a experimentação como caminho para a construção do conhecimento.</p>
+                    <img src="img/projeto-3.png" alt="Imagem representativa do projeto de atletismo e tecnologia" />
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5 text-center">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="mailto:carloschessa@prof.educacao.sp.gov.br">carloschessa@prof.educacao.sp.gov.br</a>
+        </div>
+        <p class="my-5">© 2025. Produzido por professor Carlos.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
